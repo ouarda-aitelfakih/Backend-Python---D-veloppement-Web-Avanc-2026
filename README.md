@@ -9,8 +9,8 @@
 
 ---
 
-![GitHub repo size](https://img.shields.io/github/repo-size/[username]/[repo-name]?color=blue&style=flat-square)
-![Last commit](https://img.shields.io/github/last-commit/[username]/[repo-name]?color=green&style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/ouarda-aitelfakih/Backend-Python---Developpement-Web-Avance2026?color=blue&style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/ouarda-aitelfakih/Backend-Python---Developpement-Web-Avance2026?color=green&style=flat-square)
 
 </div>
 
@@ -38,4 +38,4 @@
 
 ## 📬 Contact
 
-[![GitHub](https://img.shields.io/badge/GitHub-[ouarda-aitelfakih]-black?style=flat-square&logo=github)](https://github.com/ouarda-aitelfakih)
+[![GitHub](https://img.shields.io/badge/GitHub-ouarda--aitelfakih-black?style=flat-square&logo=github)](https://github.com/ouarda-aitelfakih)
