@@ -9,8 +9,8 @@
 
 ---
 
-![GitHub repo size](https://img.shields.io/github/repo-size/ouarda-aitelfakih/Backend-Python---Developpement-Web-Avance2026?color=blue&style=flat-square)
-![Last commit](https://img.shields.io/github/last-commit/ouarda-aitelfakih/Backend-Python---Developpement-Web-Avance2026?color=green&style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/ouarda-aitelfakih/Backend-Python---D-veloppement-Web-Avanc-2026?color=blue&style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/ouarda-aitelfakih/Backend-Python---D-veloppement-Web-Avanc-2026?color=green&style=flat-square)
 
 </div>
 
@@ -28,7 +28,7 @@
 
 ## 📂 Structure du repo
 ```
-📦 Backend-Python---Developpement-Web-Avance2026
+📦 Backend-Python---D-veloppement-Web-Avanc-2026
  ┣ 📁 cours        → Exemples et exercices refaits du cours
  ┣ 📁 devoirs      → Devoirs rendus
  ┗ 📁 tps          → Travaux pratiques
