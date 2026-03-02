@@ -38,4 +38,4 @@
 
 ## 📬 Contact
 
-[![GitHub](https://img.shields.io/badge/GitHub-[username]-black?style=flat-square&logo=github)](https://github.com/[username])
+[![GitHub](https://img.shields.io/badge/GitHub-[ouarda-aitelfakih]-black?style=flat-square&logo=github)](https://github.com/ouarda-aitelfakih)
