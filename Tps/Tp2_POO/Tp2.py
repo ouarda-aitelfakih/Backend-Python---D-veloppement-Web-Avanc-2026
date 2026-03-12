@@ -15,7 +15,7 @@
 #la classe de base 
 from abc import ABC, abstractmethod
 class Boisson(ABC):
-    
+
     @abstractmethod
     def cout(self):
         pass
@@ -225,7 +225,7 @@ Commande.valider()
 
 
 #=================================================================================================================
-#                                                  Partie7
+#                                                  Partie8
 #=================================================================================================================
 
-
+#voir le rapport 
