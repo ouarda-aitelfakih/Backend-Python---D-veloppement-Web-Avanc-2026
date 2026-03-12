@@ -15,6 +15,7 @@
 #la classe de base 
 from abc import ABC, abstractmethod
 class Boisson(ABC):
+    
     @abstractmethod
     def cout(self):
         pass
@@ -122,11 +123,11 @@ print(menu)
 #data classes sont des classes qui contenat uniquement des données
 from dataclasses import dataclass
 
-@dataclass
+@dataclass               #dataclass est une classe simple qui contient juste des données
 class Client:
     nom: str
     numero: int 
-    points_fidelite: int
+    points_fidelite: int = 0 
 
 
 #=================================================================================================================
@@ -151,4 +152,80 @@ class Caramel(DecorateurBoisson):
 #voir la ligne 34
 #exemple:
 print(boisson1.afficher())
+
+
+#=================================================================================================================
+#                                                  Partie7
+#=================================================================================================================
+
+#1.création de la classe Commande
+class Commande:
+    #initialiser la classe avec un attribut client et une liste de boisson vide 
+    def __init__(self,Client):
+        self.Client = Client
+        self.boissons = []
+    
+    #méthode pour ajouter plusieur boissons
+    def ajouter_boisson(self,boisson):
+        self.boissons.append(boisson)
+
+    #méthode pour permettant de calculer le prix total de la commande
+    def prix_total(self) :
+        return sum(b.cout() for b in self.boissons)
+    
+    #afficher le contenu de la commande
+    def afficher(self):
+        print(f"Client:{self.Client.nom}")
+        for b in self.boissons:
+            print(f" {b.description()} : {b.cout()}")
+        print(f"Total : {self.prix_total()}$")
+
+#2.classes dérivées
+class CommandeSurPlace(Commande):
+    def afficher(self):
+        print("===Commande Sur place====")
+        super().afficher()
+
+class CommandeEmporter(Commande):
+    def afficher(self):
+        print("====Commande à Emporter===")
+        super().afficher()
+
+#3.Programme de fidélité
+class Fidelite:
+    def ajouter_points(self,client,montant):
+        points_gagnes = int(montant) #une point par dollard
+        client.points+points_gagnes
+        print(f"+{points_gagnes} points -> Total : {Client.points} pts")
+
+#4.héritage multiple
+class CommandeFidele(Commande,Fidelite):
+    def valider(self):
+        self.afficher()
+        self.ajouter_points(self.Client,self.prix_total())
+
+#5.test complet
+
+#Créer un client 
+Client = Client("ouarda",1,20)
+
+#Créer des boissons
+b1 = Cafe()
+b1 = Lait(b1)
+b1 = Sucre(b1)
+b2 = The()
+b2 = Caramel(b2)
+
+#créer une commande fidèle
+Commande = CommandeFidele(Client)
+Commande.ajouter_boisson(b1)
+Commande.ajouter_boisson(b2)
+
+Commande.valider()
+
+
+#=================================================================================================================
+#                                                  Partie7
+#=================================================================================================================
+
 
